@@ -8,13 +8,17 @@ import {
 
 import AppBM from '../Containers/AppBM'
 import Login from '../Containers/Login'
+import Registro from '../Containers/Registro'
+import Perfil from '../Containers/Perfil'
 
 export default function AppRouter() {
     return (
         <div>
             <Router>               
                     <Switch>                                               
-                        <Route   path="/peliculas" component={AppBM}  />
+                        <Route exact  path="/perfil" component={Perfil}  />
+                        <Route exact  path="/peliculas" component={AppBM}  />
+                        <Route exact  path="/registro" component={Registro}  />
                         <Route exact  path="/" component={Login}  />
                     </Switch>                  
                </Router>
