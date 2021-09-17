@@ -186,20 +186,14 @@ export const ImgPerfil = styled.img`
 `;
 
 export const LabelPerfil = styled(Labels)`
-    color:white
+    color:white;
 `;
 
 export const FormPerfil = styled.span`
-    color:gray;
-    border:2px solid red;
-    padding:5px;
-    margin-bottom:10px;
-    border-radius:5px;
-    cursor:pointer;
-    &:hover{
-        color:white;
-        background:red;
-    }
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
 `;
 
 export const InputFormPerfil = styled.input`
@@ -220,7 +214,7 @@ export const ButtonFormPerfil = styled(Buttons)`
     border-radius:10px;
     color:gray;
     &:hover{
-        background:#07c637
+        background:#07c637;
         color:white;
     }
 `;
@@ -255,7 +249,7 @@ export const SpanEliminar = styled.span`
     cursor:pointer;
     &:hover{
         color:white;
-        background:red;
+        // background:red;
     }
 `;
 

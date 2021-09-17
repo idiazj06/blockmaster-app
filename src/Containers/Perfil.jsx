@@ -77,7 +77,7 @@ export default function Perfil() {
 
 
     const handleRedirect = () => {
-        history.push('/blockmaster/')
+        history.push('/')
     }
 
     console.log(datosSesion)
