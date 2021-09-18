@@ -25,7 +25,7 @@ export default function Cards({ personaje }) {
                 <ImgCard src={poster} className="card-img-top" height="330px" alt={personaje.title} />
             </div>
 
-            <Modal isOpen={modal} size={'lg'} contentClassName="bg-dark bg-opacity-100 text-white"  >
+            <Modal isOpen={modal} size={'lg'} contentClassName="bg-dark bg-opacity-100 text-white" >
                 <ModalHeader>
                     <InputClose
                         type="button"
@@ -34,12 +34,10 @@ export default function Cards({ personaje }) {
 
                     />
                 </ModalHeader>
-                {/* <ModalBody> */}
                 <div className="row justify-content-center">
                     <div className="col-sm-12 col-md-12 col-lg-6">
                         <ModalBodyImg src={poster} alt="" />
                     </div>
-                    {/* <ModalBodyOverview> */}
                     <ModalBodyOverview className="col-sm-12 col-md-12 col-lg-6 px-5 ">
                         <div className="overview me-4 my-5  ">
                             <h3 className="py-3">{personaje.title}</h3>
@@ -50,18 +48,11 @@ export default function Cards({ personaje }) {
                             <BtnDespues className=" col-sm-12 col-md-12 col-lg-6 " type="button" value="+ Ver despues" onClick={openVideo} />
                         </div>
                     </ModalBodyOverview>
-                    {/* </ModalBodyOverview> */}
                 </div>
-                {/* <div className="row">
-                    <BtnTrailer className="col-sm-12 col-md-6" type="button" value="Ver trailer" onClick={openVideo} />
-                    <BtnDespues className="col-sm-12 col-md-6" type="button" value="+ Ver despues" onClick={openVideo} />
-                </div> */}
-
-                {/* </ModalBody> */}
             </Modal>
 
             {/* MODAL VIDEO */}
-            <Modal isOpen={modalVideo} size="xl" contentClassName=" modalVideo" >
+            <Modal isOpen={modalVideo} size="xl" contentClassName=" bg-dark bg-opacity-25 modalVideo" >
                 <ModalHeader>
                     <InputClose
                         type="button"

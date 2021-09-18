@@ -80,7 +80,6 @@ export default function Perfil() {
         history.push('/')
     }
 
-    console.log(datosSesion)
 
     const styleLinkHome = {
         color: 'white',

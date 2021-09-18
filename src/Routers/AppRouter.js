@@ -20,7 +20,9 @@ export default function AppRouter() {
                         <Route exact  path="/peliculas" component={AppBM}  />
                         <Route exact  path="/registro" component={Registro}  />
                         <Route exact  path="/" component={Login}  />
-                    </Switch>                  
+                        <Redirect to="/" />    
+                    </Switch> 
+                                 
                </Router>
         </div>
     )

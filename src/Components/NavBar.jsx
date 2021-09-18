@@ -5,6 +5,7 @@ import { Link, NavLink, useHistory } from 'react-router-dom'
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { InputSearch, ButtonSearch, FormSearch, FontNav, Perfil } from '../Styled/style'
 import { FaSearch } from 'react-icons/fa';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function NavBar({ estado, estadoSearch }) {
     const history = useHistory()
@@ -27,11 +28,11 @@ export default function NavBar({ estado, estadoSearch }) {
     }
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light text-center ">
-                <div className="container-fluid">
+            <nav className="navbar navbar-expand-lg navbar-light ">
+                <div className="container-fluid ">
                     <Link className="navbar-brand text-white" to="/Peliculas"><img src="https://res.cloudinary.com/duaokxfsp/image/upload/v1631319195/BLOCKMASTER/logo-blockBuster_1_ecwv3y.png" alt="" /></Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler border-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className=""style={{color:'white'}}><GiHamburgerMenu/></span>
                     </button>
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -61,7 +62,7 @@ export default function NavBar({ estado, estadoSearch }) {
                             </FontNav>
                         </ul>
 
-                        <FormSearch className="d-flex" onSubmit={handleSubmit}>
+                        <FormSearch className="d-flex " onSubmit={handleSubmit}>
                             <InputSearch
                                 type="text"
                                 placeholder="Buscar tu pelicula favorita"

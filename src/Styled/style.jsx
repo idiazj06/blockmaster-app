@@ -33,10 +33,13 @@ export const ModalHeader = styled.div`
 
 export const InputClose = styled.input`
  border:none;
- background:transparent;
- color:grey;
+ background:rgba(255, 0, 0, 0.24);
+ width:40px;
+ height:40px;
+ border-radius:100%;
+ color:white;
     &:hover{
-        color:red;
+        background:red;
         font-size:20px;
         font-weight:bold;
     }

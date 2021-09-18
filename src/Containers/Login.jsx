@@ -53,7 +53,6 @@ export default function Login() {
 
     const handleChange = (e) => {
         setCheck(!check)
-        console.log(check)
     }
 
     const handleRedirect = () => {
